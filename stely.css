@@ -1,0 +1,104 @@
+/* Reset básico e fonte */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  body {
+    background-color: #f4f7f6;
+    color: #333;
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* Estilização do Formulário */
+  #FormularioAluno {
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    width: 100%;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 30px;
+  }
+  
+  #nome,
+  #curso {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+  }
+  
+  #nome:focus,
+  #curso:focus {
+    outline: none;
+    border-color: #2563eb;
+  }
+  
+  #FormularioAluno button {
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  #FormularioAluno button:hover {
+    background-color: #1d4ed8;
+  }
+  
+  /* Estilização da Tabela */
+  table {
+    width: 100%;
+    max-width: 500px;
+    border-collapse: collapse;
+    background-color: #ffffff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  }
+  
+  thead {
+    background-color: #2563eb;
+    color: #ffffff;
+    text-align: left;
+  }
+  
+  th,
+  td {
+    padding: 14px 16px;
+    border-bottom: 1px solid #e5e7eb;
+  }
+  
+  /* Efeito zebrado nas linhas geradas pelo JS */
+  #corpoTabela tr:nth-child(even) {
+    background-color: #f9fafb;
+  }
+  
+  /* Destaque ao passar o mouse na linha */
+  #corpoTabela tr:hover {
+    background-color: #eff6ff;
+  }
+  
+  /* Centraliza a coluna de numeração (#) */
+  th:first-child,
+  #corpoTabela td:first-child {
+    width: 60px;
+    text-align: center;
+    font-weight: bold;
+    color: #6b7280;
+  }
